@@ -3,6 +3,7 @@ extends layout
 block body
     div(ng-controller='AppCtrl')
         h2 Hello {{name}}
+        p #{content} this line shows how we pass information from node side to jade template side
         ul.menu
             li
                 a(href='view1') view1
