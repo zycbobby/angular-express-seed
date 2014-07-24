@@ -23,8 +23,12 @@ angular.module('myApp', [
                 templateUrl: 'partials/problems',
                 controller: 'problemCtrl'
             }).
+            when('/welcome', {
+                templateUrl: 'partials/welcome',
+                controller: 'welcomeCtrl'
+            }).
             otherwise({
-                redirectTo: '/view1'
+                redirectTo: '/welcome'
             });
 
         $locationProvider.html5Mode(true);

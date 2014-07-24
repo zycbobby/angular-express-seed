@@ -3,7 +3,10 @@
  */
 
 exports.index = function (req, res) {
-    res.render('index', { 'content': 'Curry'});
+    res.render('index', {
+        'time': new Date(),
+        'content' : 'Curry Compile this jade template'
+    });
 };
 
 exports.partials = function (req, res) {
