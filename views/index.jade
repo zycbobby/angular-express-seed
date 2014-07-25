@@ -13,10 +13,10 @@ block body
                         li
                             a(href='view2') view2
 
-        div.container(ng-view)
+        div.container(ng-view, role='main')
 
 block footer
-    div.footer
+    div.navbar.navbar-fixed-bottom
         div.container
-            p.text-muted #{time} #{content}
+            p.text-muted #{content} on #{time}
 
