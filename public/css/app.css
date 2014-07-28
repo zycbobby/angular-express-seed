@@ -32,3 +32,7 @@ body {
   content: "";
   padding: 0;
 }
+
+.focus-doc {
+    background-color: indianred;
+}
